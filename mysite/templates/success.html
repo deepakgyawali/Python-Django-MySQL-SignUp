@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Search Results - www.deepakgyawali.com.np</title>
+</head>
+<body>
+
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+    </nav>
+
+    <div class="container" style= "width: 50% ; font-size: small; height: 100px;">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+           <h5>
+                  <a style="color: black" href="{% url 'index' %}">Home</a>
+                  <a style="color: black; padding-left: 20px" href="{% url 'customer' %}">Customer</a>
+                  <a style="color: black; align-content: left; padding-left: 20px" href="{% url 'login' %}">Login</a>
+                  <a style="color: black; align-content: left; padding-left: 20px" href="{% url 'search' %}">Search</a>
+           </h5><br/>
+        <div style="text-align: left" class="container">
+           <table style="text-align: left" class="table">
+  <thead>
+    <tr>
+      <th scope="col">Search Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">First Name : {{ firstname }}</td>
+    </tr>
+    <tr>
+      <td scope="row">Last Name : {{ surname }}</td>
+    </tr>
+    <tr>
+        <td scope="row">Email : {{ email }}</td>
+    </tr>
+    <tr>
+        <td scope="row">Contact No : {{ contact_no }}</td>
+    </tr>
+    <tr>
+        <td scope="row">Address : {{ address }}</td>
+    </tr>
+    <tr>
+     <td scope="row">Address : {{ postcode }}</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+      </div>
+    </div> <!-- /container -->
+</body>
+</html>
